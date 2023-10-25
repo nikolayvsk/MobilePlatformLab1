@@ -1,0 +1,265 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="M.V. Vasylchuk"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="726dp" />
+
+    <Spinner
+        android:id="@+id/shapeSpinner"
+        android:layout_width="374dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:entries="@array/shape_array"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+            android:id="@+id/triangleLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shapeSpinner">
+
+            <EditText
+                android:id="@+id/x1EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="x1" />
+
+            <EditText
+                android:id="@+id/y1EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="y1" />
+
+            <EditText
+                android:id="@+id/x2EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="x2" />
+
+            <EditText
+                android:id="@+id/y2EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="y2" />
+
+            <EditText
+                android:id="@+id/x3EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="x3" />
+
+            <EditText
+                android:id="@+id/y3EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="y3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rectangleLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shapeSpinner">
+
+            <EditText
+                android:id="@+id/x1RectEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="x1" />
+
+            <EditText
+                android:id="@+id/y1RectEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="y1" />
+
+            <EditText
+                android:id="@+id/x2RectEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="x2" />
+
+            <EditText
+                android:id="@+id/y2RectEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="y2" />
+
+            <EditText
+                android:id="@+id/x3RectEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="x3" />
+
+            <EditText
+                android:id="@+id/y3RectEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="y3" />
+
+            <EditText
+                android:id="@+id/x4RectEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="x4" />
+
+            <EditText
+                android:id="@+id/y4RectEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="y4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/circleLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shapeSpinner">
+
+            <EditText
+                android:id="@+id/xCenterEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="x" />
+
+            <EditText
+                android:id="@+id/yCenterEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="y" />
+
+            <EditText
+                android:id="@+id/radiusEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Radius" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ellipseLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shapeSpinner">
+
+            <EditText
+                android:id="@+id/xCenterEllipseEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="x" />
+
+            <EditText
+                android:id="@+id/yCenterEllipseEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="y" />
+
+            <EditText
+                android:id="@+id/aAxisEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="a" />
+
+            <EditText
+                android:id="@+id/bAxisEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="b" />
+        </LinearLayout>
+
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="575dp"
+        android:layout_marginEnd="16dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shapeSpinner" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calculateButton" />
+
+    <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSaveButtonClicked"
+            android:text="Save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resultTextView" />
+
+        <Button
+            android:id="@+id/drawButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onDrawButtonClicked"
+            android:text="Draw"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resultTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

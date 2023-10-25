@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="shape_array">
+        <item>Triangle</item>
+        <item>Rectangle</item>
+        <item>Circle</item>
+        <item>Ellipse</item>
+    </array>
+</resources>
